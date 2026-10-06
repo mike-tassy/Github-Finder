@@ -3,11 +3,9 @@ import { useQuery } from "@tanstack/react-query";
 import { fetchGithubUser, searchGithubUser } from "../api/github";
 import UserCard from "./userCrad";
 import { useEffect } from "react";
-import { FaClock, FaUser } from "react-icons/fa";
 import SuggestionDropdown from "./suggestionDropdown";
 import RecentSearches from "./recentSearches";
 import { useDebounce } from "use-debounce";
-import type { GithubUser } from "../types";
 
 const UserSearch = () => {
   const [username, setUsername] = useState("");

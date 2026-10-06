@@ -1,5 +1,5 @@
 import { FaClock, FaUser } from "react-icons/fa";
-import { QueryClient, useQueryClient } from "@tanstack/react-query";
+import { useQueryClient } from "@tanstack/react-query";
 import { fetchGithubUser } from "../api/github";
 
 type RecentSearchesProps = {
